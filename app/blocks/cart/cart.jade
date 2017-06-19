@@ -1,0 +1,25 @@
+mixin cart()
+	+b.cart&attributes(attributes)
+		+e.UL.list
+			+e.LI.item
+				+e.I.icon._cart
+				+e.A.link(href="#")
+					span 3шт /
+					span 17 250 р.
+			+e.LI.item
+				+e.I.icon._star
+				+e.A.link(href="#")
+					span Избранное
+					span (7)
+			+e.LI.item
+				+e.I.icon._libra
+				+e.A.link(href="#")
+					span К сравнению
+					span (5)
+		+b.UL.gallery
+			+e.LI.item
+				+e.IMG.img(src="/assets/images/3.jpg" alt="Дрель")
+			+e.LI.item
+				+e.IMG.img(src="/assets/images/2.jpg" alt="Дрель")
+			+e.LI.item
+				+e.IMG.img(src="/assets/images/1.jpg" alt="Дрель")
