@@ -1,50 +1,49 @@
 .menu-tools
 	display flex
 	justify-content space-between
-
 .menu-tools__group
 	display flex
 	width 80.6%
 	flex 1
 .menu-tools__link
-	display block
-	white-space: nowrap
-	padding-y 11px
 	padding-x 18px
+	padding-y 11px
+	display block
 	font-size 14px
 	font-weight bold
-	background-color: #252525
+	white-space nowrap
 	color: #ffffff
-	transition 0.4s
+	background-color #252525
+	transition .4s
 	&_search,
 	&_sale
-		text-transform: uppercase
-		color: #000
-		background-color: #ffcc00
+		color #000
+		background-color #ffcc00
+		text-transform uppercase
 	&_sale
 		width 10.85%
 		border-radius 0 10px 10px 0
 	&_search
+		padding 0
 		display flex
 		width 8.55%
 		border-radius  10px 0 0 10px
-		padding: 0
 	&_accessories
 		flex 1
 	&:hover,
 	&_active
-		color: #000
-		background-color: #ffcc00
+		color #000
+		background-color #ffcc00
 .menu-tools__search-btn
-	display: flex
-	justify-content: center
-	align-self: center
+	display flex
+	justify-content center
+	align-self center
 	width 39.4%
 .menu-tools__search-fild
-	width: 60.6%
-	background-color: #252525
+	width 60.6%
+	background-color #252525
 .menu-tools__icon
 	&_search
-		display: block
+		display block
 		sprite($search)
 
