@@ -1,27 +1,40 @@
 .cart
 	display flex
+	justify-content space-between
 	width: 43.66%
 .cart__list
-	display: flex
-	flex-direction: column
-	justify-content: space-between
+	display flex
+	width 36.76%
+	flex-direction column
+	justify-content space-between
 
 .cart__item
-	display: flex
+	display flex
+	align-items center
+	padding-left 30px
+	position: relative
+	height: 33%
 .cart__icon
+	position: absolute
+	left: 0
 	&_cart
 		sprite($cart)
 	&_star
 		sprite($star)
+		left 3px
 	&_libra
 		sprite($libra)
 
 .cart__link
-	font-size: 14px
+	font-size 12px
 	color: #000
 	text-decoration: underline
+	&_cart
+		font-size 14px
 .gallery
 	display: flex
+	width: 59.52%
+	justify-content: space-between
 .gallery__item
 	display: flex
 	justify-content: center

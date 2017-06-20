@@ -8,6 +8,8 @@ include ../menu/menu
 include ../banner/banner
 include ../cart/cart
 include ../contacts/contacts
+include ../store-name/store-name
+include ../city/city
 include ../menu-tools/menu-tools
 
 mixin header()
@@ -24,5 +26,10 @@ mixin header()
 						+banner()
 						+cart()
 						+contacts()
-			+row
+
+			+row(class="row--bottom")
+				+store-name()
+				+city()
+
+			+row(class="row--menu-tools")
 				+menu-tools()

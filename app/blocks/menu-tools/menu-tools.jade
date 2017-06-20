@@ -1,20 +1,15 @@
 mixin menu-tools()
-	+b.UL.menu-tools&attributes(attributes)
-		+e.LI.item
-			+e.A.link(href="#") Поиск
-		+e.LI.item
-			+e.A.link(href="#") Перфораторы
-		+e.LI.item
+	+b.NAV.menu-tools&attributes(attributes)
+		+e.A.link._search(href="#")
+			+e.DIV.search-btn
+				+e.I.icon._search
+			+e.DIV.search-fild
+		+e.group
+			+e.A.link._active(href="#") Перфораторы
 			+e.A.link(href="#") Дрели
-		+e.LI.item
 			+e.A.link(href="#") Шлифмашины
-		+e.LI.item
 			+e.A.link(href="#") Пистолеты
-		+e.LI.item
 			+e.A.link(href="#") Электропилы
-		+e.LI.item
 			+e.A.link(href="#") Наборы инструментов
-		+e.LI.item
-			+e.A.link(href="#") Аксессуары
-		+e.LI.item
-			+e.A.link(href="#") Распродажа
+			+e.A.link._accessories(href="#") Аксессуары
+		+e.A.link._sale(href="#") Распродажа
